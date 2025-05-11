@@ -52,7 +52,7 @@
 </head>
 <body>
     <div id="ads-container">
-        <!-- Generate 3 Ads Buttons -->
+        <!-- Generate 20 Ads Buttons -->
         <div id="ads-buttons"></div>
     </div>
     <button class="confirm-btn" id="confirmBtn">Submit Clicks</button>
@@ -63,14 +63,14 @@
 
         // Generate Ads buttons dynamically
         const adsContainer = document.getElementById('ads-buttons');
-        for (let i = 1; i <= 3; i++) {
+        for (let i = 1; i <= 20; i++) {
             const btn = document.createElement('button');
             btn.classList.add('btn');
             btn.textContent = `Ads-${i}`;
             btn.onclick = function() {
                 clickedAds++;
                 // Open the link for each ad click
-                window.open("https://coinpayu.com", "_blank");
+                window.open("https://sawutser.top/4/9320136", "_blank");
             };
             adsContainer.appendChild(btn);
         }
@@ -79,7 +79,7 @@
         const confirmBtn = document.getElementById('confirmBtn');
         confirmBtn.onclick = function() {
             const message = document.getElementById('message');
-            if (clickedAds < 3) {
+            if (clickedAds < 20) {
                 message.textContent = "(Clicking Failed)";
                 message.classList.add('error');
                 message.classList.remove('success');
